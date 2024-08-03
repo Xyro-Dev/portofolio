@@ -1,0 +1,185 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="https://telegra.ph/file/1e63ebf6241a6a64f30fb.jpg" type="image/x-icon">
+
+  <!-- style -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<style>
+        .center-img-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10vh;
+        }
+    </style>
+  <!-- font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Script -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <title>IFung Here.</title>
+</head>
+
+<body class="overflow-x-hidden">
+
+  <nav class="fixed z-50 flex items-center max-w-xs px-6 py-2 -translate-x-1/2 border rounded-lg bg-opacity-80 backdrop-blur-sm left-1/2 border-slate-500 top-5 bg-dark2">
+    <div class="flex gap-6 px-6">
+      <button onclick="scrollToSection('about')" class="text-sm text-white nav-button active">About</button>
+      <button onclick="scrollToSection('project')" class="text-sm text-white nav-button">Project</button>
+      <button onclick="scrollToSection('contact')" class="text-sm text-white nav-button">Contact</button>
+    </div>
+  </nav>
+
+  <section class="relative px-6 pt-40 pb-10 overflow-hidden lg:pb-4 particle bg-dark1 md:px-36 2xl:px-72">
+    <div id="particle" class="absolute top-0 z-0 w-full min-h-screen -left-0">
+    </div>
+<img src="/icons/circleblur.svg" class="absolute top-0 left-16" alt="">
+  <!-- ... -->
+    <div class="relative z-20 header">
+      <div class="z-10 flex flex-col-reverse items-center justify-between gap-10 lg:flex-row">
+        <div data-aos="fade-right">
+          <h2 class="text-xl font-bold text-white typewriter lg:text-2xl">Hello, <span class="text-blue1" id="typewriter-text">Saya IFung</span>
+          </h2>
+          <h1 class="mt-2 text-3xl font-bold lg:text-5xl text-blue2">Junior Front End & Back End <br>Developer</h1>
+          <p class="w-full max-w-xl text-base text-justify text-white mt-7">Saya seorang Junior Frontend Developer dan Backend Developer dari
+            JawaTengah yang berfokus pada Web Development.</p>
+          <button onclick="scrollToSection('about')" class="relative glow-button mt-7 bg-blue2 text-black w-28 py-2 font-bold rounded-tr-[10px] rounded-tl-[20px] rounded-bl-[10px] rounded-br-[20px] transition ease-in duration-150 hover:bg-blue1">About
+            Me</button>
+        </div>
+        <div data-aos="fade-left">
+<img src="/images/foto.gif" class="w-full max-w-52 lg:max-w-xs" alt="">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section Start -->
+  <section id="about" class="relative px-6 pb-10 pt-28 bg-dark2 md:pt-72 lg:pb-4 md:px-36 2xl:px-96">
+    <svg viewBox="0 0 1278 189" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0 w-full">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M1278 0H0V1.04584C4.45843 14.3343 36.9789 88.1631 211.473 98H1041C1217.86 100.621 1266.06 164.559 1278 188.799V0Z" fill="#161B21"></path>
+    </svg>
+    <div class="flex flex-col items-center">
+      <h1 data-aos="fade-up" class="text-3xl font-bold text-white">About <span class="text-blue1">Me</span></h1>
+      <div data-aos="fade-right" class="flex mt-10 gap-x-10">
+        <p class="w-full text-white">Halo, Saya IFung, Seorang Junior Frond End & Back End Developer. Beberapa Project Telah Saya Kerjakan, Dari Web Portofolio, Membuat Rest API, Dan Membuat Gateway API WhatsApp.</p>
+      </div>
+    </div>
+
+  </section>
+  <!-- About Section End -->
+
+  <!-- Project Section Start -->
+  <section id="project" class="relative px-6 pb-10 overflow-hidden lg:pb-4 bg-dark1 pt-28 md:pt-72 md:px-36 lg:px-72">
+    <svg viewBox="0 0 1278 189" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0 w-full">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M1278 0H0V1.04584C4.45843 14.3343 36.9789 88.1631 211.473 98H1041C1217.86 100.621 1266.06 164.559 1278 188.799V0Z" fill="#1F252D"></path>
+    </svg>
+    <div class="flex flex-col items-center">
+      <h1 data-aos="fade-up" class="text-3xl font-bold text-white"><span class="text-blue1">My</span> Project</h1>
+      <div class="flex flex-wrap justify-center w-full gap-10 mt-10">
+        <div data-aos="zoom-in-up" class="w-full max-w-md overflow-hidden shadow-2xl project bg-dark2 lg:w-1/2 border-t-dark1 rounded-xl">
+          <img src="https://telegra.ph/file/20e9afb28601a17e9c0a6.jpg" alt="" class="object-cover w-full rounded-xl h-60">
+          <div class="flex flex-col gap-2 p-3">
+            <h2 class="text-lg font-semibold text-white">Fumi - AI</h2>
+            <p class="text-sm font-semibold text-gray1">Sistem AI Yang Dikembangkan Sebagai Teman Mengobrol Yang Canggih</p>
+            <button class="glow-button relative mt-5 bg-blue2 text-black w-fit px-4 py-1 font-bold text-sm rounded-tr-[10px] rounded-tl-[20px] rounded-bl-[10px] rounded-br-[20px] transition ease-in duration-150 hover:bg-blue1">View</button>
+          </div>
+        </div>
+        <div data-aos="zoom-in-up" class="w-full max-w-md overflow-hidden shadow-2xl project bg-dark2 lg:w-1/2 border-t-dark1 rounded-xl">
+          <img src="https://btch.pages.dev/file/64023f99bc3edbd1d9895.jpg" alt="" class="object-cover w-full rounded-xl h-60">
+          <div class="flex flex-col gap-2 p-3">
+            <h2 class="text-lg font-semibold text-white">Mahiru - Chatbot</h2>
+            <p class="text-sm font-semibold text-gray1">WhatsApp Bot Yang Bisa Anda Ajak Bicara Sebagai Teman & Menjadi Asisten</p>
+            <button class="glow-button relative mt-5 bg-blue2 text-black px-4 py-1 w-fit text-sm font-bold rounded-tr-[10px] rounded-tl-[20px] rounded-bl-[10px] rounded-br-[20px] transition ease-in duration-150 hover:bg-blue1">View</button>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Project Section End -->
+
+  <!-- Contact Section Start -->
+  <section id="contact" class="relative px-6 pb-10 overflow-hidden bg-dark2 pt-28 md:pt-72 md:px-36 lg:px-72">
+    <svg viewBox="0 0 1278 189" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0 w-full">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M1278 0H0V1.04584C4.45843 14.3343 36.9789 88.1631 211.473 98H1041C1217.86 100.621 1266.06 164.559 1278 188.799V0Z" fill="#161B21"></path>
+    </svg>
+    <div class="flex flex-col items-center">
+      <h1 data-aos="fade-up" class="text-3xl font-bold text-white">Contact</h1>
+      <div class="flex flex-wrap justify-center w-full gap-10 mt-10">
+        <div data-aos="zoom-in-up" class="flex w-full max-w-md gap-4 p-4 overflow-hidden border border-gray-400 shadow-2xl bg-gradient-to-br from-blue1/20 via-dark1 to-dark1 lg:w-1/2 rounded-xl">
+          <div class="flex flex-col w-5/6 gap-4">
+            <div>
+              <h1 class="text-lg font-bold text-gray-400">Github</h1>
+              <span class="text-sm font-semibold text-gray-400">Explore the source code for all my project on
+                Github</span>
+            </div>
+            <a href="https://github.com/Xyro-Dev" class="relative px-4 py-2 text-sm font-semibold bg-gray-500 rounded-lg button text-dark1 glow-button-github w-fit">Go
+              to
+              Github</a>
+          </div>
+          <div class="flex items-end justify-end w-1/6 h-full">
+            <img src="/icons/github.svg" alt="" class="w-10 p-2 bg-gray-500 rounded-full">
+          </div>
+        </div>
+
+        <div data-aos="zoom-in-up" class="flex justify-between w-full max-w-md gap-4 p-4 overflow-hidden border border-[#F2748B] shadow-2xl bg-gradient-to-br from-[#FE3F3F]/20 via-dark1/50 to-dark1 lg:w-1/2 rounded-xl">
+          <div class="flex flex-col justify-between w-5/6 gap-4">
+            <div>
+              <h1 class="text-lg font-bold text-[#F2748B]">Instagram</h1>
+              <span class="text-[#F2748B] text-sm font-semibold">My Instagram Account</span>
+            </div>
+            <a href="https://www.instagram.com/ifung_sajah/" class="button relative px-4 py-2 font-semibold text-dark1 bg-[#F2748B] rounded-lg glow-button-instagram w-fit text-sm">Go
+              to
+              Instagram</a>
+          </div>
+          <div class="flex items-end h-full">
+            <img src="/icons/instagram.svg" alt="" class="w-10 p-2 bg-[#F2748B] rounded-full">
+          </div>
+        </div>
+
+
+        
+
+        <div data-aos="zoom-in-up" class="flex justify-between w-full max-w-md gap-4 p-4 overflow-hidden border border-[#F84437] shadow-2xl bg-gradient-to-br from-[#F84437]/20 via-dark1/50 to-dark1 lg:w-1/2 rounded-xl">
+          <div class="flex flex-col justify-between w-5/6 gap-4">
+            <div>
+              <h1 class="text-lg font-bold text-[#F84437]">Email</h1>
+              <input hidden="" value="support@justiftxh.xyz" id="email">
+              <span class="text-[#F84437] text-sm font-semibold">My Email</span>
+            </div>
+            <button onclick="copyEmail()" class="button relative px-4 py-2 font-semibold text-dark1 bg-[#F84437]/70 rounded-lg glow-button-email w-fit text-sm">Copy
+              Email</button>
+          </div>
+          <div class="flex items-end h-full">
+            <img src="/icons/email.svg" alt="" class="w-10 p-2 bg-[#F84437]/50 rounded-full">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section End -->
+
+  <!-- Footer Section Start -->
+<div class="center-img-container">
+        <img alt="count" src="https://count.getloli.com/get/@:Ifung?theme=rule34">
+    </div>
+  
+  <footer class="flex justify-center pt-10 pb-10 bg-dark2">
+    <p class="text-xs font-semibold">IFTXH - Be honest</p>
+  </footer>
+  <!-- Footer Section End -->
+
+<script src="/js/app.js"></script>
+  <script src="/js/particle.js"></script>
+
+
+</body></html>
