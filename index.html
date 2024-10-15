@@ -197,19 +197,29 @@
         const devtoolsDetector = setInterval(() => {
             const threshold = 160;
             if (window.outerWidth - window.innerWidth > threshold || window.outerHeight - window.innerHeight > threshold) {
-                document.body.innerHTML = `<pre>{ "message": "ngapain bang" }</pre>`;
+                document.body.innerHTML = `<pre>ngapain bang</pre>`;
                 clearInterval(devtoolsDetector); 
             }
         }, 500); 
         const erudaCheck = () => {
             if (typeof eruda !== 'undefined') {
-                document.body.innerHTML = `<pre>{ "message": "ngapain bang" }</pre>`;
+                document.body.innerHTML = `<pre>ngapain bang</pre>`;
             } else {
                 setTimeout(erudaCheck, 1000); 
             }
         };
         erudaCheck();
     </script>
-
+       <script>
+        function detectGetRequestOrScript() {
+            const suspiciousAgents = ['curl', 'wget', 'http', 'axios', 'node-fetch', 'Postman', 'python'];
+            const userAgent = navigator.userAgent.toLowerCase();
+            let isSuspicious = suspiciousAgents.some(agent => userAgent.includes(agent));
+            if (isSuspicious || typeof window === 'undefined') {
+                document.body.innerHTML = `<pre>ngapain bang</pre>`;
+            }
+        }
+        detectGetRequestOrScript();
+    </script>
 
 </body></html>
