@@ -193,6 +193,23 @@
 
 <script src="/js/app.js"></script>
   <script src="/js/particle.js"></script>
+      <script>
+        const devtoolsDetector = setInterval(() => {
+            const threshold = 160;
+            if (window.outerWidth - window.innerWidth > threshold || window.outerHeight - window.innerHeight > threshold) {
+                document.body.innerHTML = `<pre>{ "message": "ngapain bang" }</pre>`;
+                clearInterval(devtoolsDetector); 
+            }
+        }, 500); 
+        const erudaCheck = () => {
+            if (typeof eruda !== 'undefined') {
+                document.body.innerHTML = `<pre>{ "message": "ngapain bang" }</pre>`;
+            } else {
+                setTimeout(erudaCheck, 1000); 
+            }
+        };
+        erudaCheck();
+    </script>
 
 
 </body></html>
